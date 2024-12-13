@@ -1,0 +1,467 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Abre la etiqueta <html> y establece el idioma del documento como español -->
+
+<head> <!-- Abre la sección <head> que contiene metadatos y enlaces a recursos -->
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8, que soporta la mayoría de los caracteres y símbolos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Indica a Internet Explorer que use la última versión del motor de renderizado -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles, asegurando que el ancho se ajuste al dispositivo -->
+    <title>Bitel Peru</title> <!-- Establece el título de la página que se mostrará en la pestaña del navegador -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" /> <!-- Enlaza a la hoja de estilos de Font Awesome para usar iconos -->
+    
+    <link rel="stylesheet" href="style.css"> <!-- Enlaza a una hoja de estilos local llamada "style.css" para aplicar estilos personalizados a la página -->
+</head> <!-- Cierra la sección <head> -->
+
+<body>
+    <section id="header"> <!-- Sección que representa el encabezado de la página, identificada por el id "header" -->
+        <a href="#"><img src="image/Diseño sin título (15).png" class="logo" alt=""></a> <!-- Enlace que contiene una imagen, que actúa como logo de la página. El atributo "alt" está vacío, lo que no es recomendable para accesibilidad. -->
+        <div> <!-- Contenedor para el menú de navegación -->
+            <ul id="navbar"> <!-- Lista no ordenada que representa el menú de navegación, identificada por el id "navbar" -->
+                <li><a class="active" href="index.html">Inicio</a></li> <!-- Elemento de lista con un enlace a la página de inicio, marcado como activo -->
+                <li><a href="shop.html">Tienda</a></li> <!-- Elemento de lista con un enlace a la página de tienda -->
+                <li><a href="blog.html">Blog</a></li> <!-- Elemento de lista con un enlace a la página del blog -->
+ 
+                <li><a href="contact.html">Contacto</a></li> <!-- Elemento de lista con un enlace a la página de contacto -->
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li> <!-- Elemento de lista que contiene un enlace al carrito de compras, con un ícono de bolsa de compras -->
+                <a href="" id="close"><i class="far fa-times"></i></a> <!-- Enlace con un ícono de cerrar, que probablemente se utiliza para cerrar un menú desplegable o modal -->
+            </ul>
+        </div>
+        <div id="mobile"> <!-- Contenedor para la navegación móvil -->
+            <a href="cart.html"> <i class="far fa-shopping-bag"></i></a> <!-- Enlace al carrito de compras, con un ícono de bolsa de compras -->
+            <i id="bar" class="fas fa-outdent"></i> <!-- Ícono que probablemente representa un menú hamburguesa para la navegación móvil -->
+        </div>
+    </section>
+
+  <section id="hero"> <!-- Sección principal con un identificador único "hero" -->
+    <h4>Oferta única</h4> <!-- Encabezado de nivel 4 que destaca una oferta especial -->
+    <h2>Descuentos por tiempo limitado</h2> <!-- Otro encabezado de nivel 4 que indica que los descuentos son temporales -->
+    <h1>En todos los productos</h1> <!-- Encabezado de nivel 1 que resalta que la oferta aplica a todos los productos -->
+    <p>Ahorra con Bitel hasta un 50% por 1 año </p> <!-- Párrafo que informa al usuario sobre el ahorro posible con Bitel -->
+    <button>Comprar ahora</button> <!-- Botón que invita al usuario a realizar una compra inmediata -->
+</section>
+
+<section id="feature" class="section-p1"> <!-- Sección principal con un ID 'feature' y una clase 'section-p1' -->
+    <div class="fe-box"> <!-- Contenedor para la primera característica -->
+        <img src="image/features/dv1.png" alt=""> <!-- Imagen de la característica, sin texto alternativo -->
+        <h6>Envio Gratis</h6> <!-- Título de la característica -->
+    </div>
+
+    <div class="fe-box"> <!-- Contenedor para la segunda característica -->
+        <img src="image/features/compra online.png" alt=""> <!-- Imagen de la característica, sin texto alternativo -->
+        <h6>Compra en linea</h6> <!-- Título de la característica -->
+    </div>
+
+    <div class="fe-box"> <!-- Contenedor para la tercera característica -->
+        <img src="image/features/ahorra dinero.png" alt=""> <!-- Imagen de la característica, sin texto alternativo -->
+        <h6>Ahorra Dinero</h6> <!-- Título de la característica -->
+    </div>
+
+    <div class="fe-box"> <!-- Contenedor para la cuarta característica -->
+        <img src="image/features/Promociones.png" alt=""> <!-- Imagen de la característica, sin texto alternativo -->
+        <h6>Promociones</h6> <!-- Título de la característica -->
+    </div>
+
+    <div class="fe-box"> <!-- Contenedor para la quinta característica -->
+        <img src="image/features/compra feliz.png" alt=""> <!-- Imagen de la característica, sin texto alternativo -->
+        <h6>Compra feliz</h6> <!-- Título de la característica -->
+    </div>
+
+    <div class="fe-box"> <!-- Contenedor para la sexta característica -->
+        <img src="image/features/soporte 24.png" alt=""> <!-- Imagen de la característica, sin texto alternativo -->
+        <h6>Soporte 24/7</h6> <!-- Título de la característica -->
+    </div>
+</section>
+
+<section id="product1" class="section-p1"> <!-- Sección con ID 'product1' y clase 'section-p1' -->
+    <h2>Productos Destacados</h2> <!-- Título de la sección que indica que son productos destacados -->
+    <P>Pomociones Exclusivas Cambiando de otro operador a Bitel</P> <!-- Descripción de la promoción para nuevos clientes -->
+    <div class="pro-container"> <!-- Contenedor para los productos destacados -->
+
+        <div class="pro"> <!-- Inicio de un producto -->
+            <img src="image/portabilidad/2.png" alt=""> <!-- Imagen del producto, sin texto alternativo -->
+            <div class="des"> <!-- Contenedor para la descripción del producto -->
+                <span>Portabilidad</span> <!-- Etiqueta que indica que es un servicio de portabilidad -->
+                <h5>Plan 69.90 con 50% de Dscto por 12 meses</h5> <!-- Descripción del plan y su descuento -->
+                <div class="star"> <!-- Contenedor para las estrellas de calificación -->
+                    <i class="fas fa-star"></i> <!-- Estrella de calificación (5 estrellas en total) -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>S/34.90</h4> <!-- Precio del producto después del descuento -->
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a> <!-- Enlace al carrito de compras con un ícono de carrito -->
+        </div> <!-- Fin del producto -->
+
+        <div class="pro"> <!-- Inicio de otro producto -->
+            <img src="image/portabilidad/3.png" alt=""> <!-- Imagen del segundo producto, sin texto alternativo -->
+            <div class="des"> <!-- Contenedor para la descripción del segundo producto -->
+                <span>Portabilidad</span> <!-- Etiqueta que indica que es un servicio de portabilidad -->
+                <h5>Plan 55.90 con 50% de Dscto por 12 meses</h5> <!-- Descripción del segundo plan y su descuento -->
+                <div class="star"> <!-- Contenedor para las estrellas de calificación -->
+                    <i class="fas fa-star"></i> <!-- Estrella de calificación (5 estrellas en total) -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>S/27.90</h4> <!-- Precio del segundo producto después del descuento -->
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a> <!-- Enlace al carrito de compras con un ícono de carrito -->
+        </div> <!-- Fin del segundo producto -->
+
+        <div class="pro"> <!-- Inicio de un contenedor para un producto -->
+            <img src="image/portabilidad/1.png" alt=""> <!-- Imagen del producto, sin texto alternativo -->
+            <div class="des"> <!-- Contenedor para la descripción del producto -->
+                <span>Portabilidad</span> <!-- Etiqueta que indica el tipo de producto -->
+                <h5>Plan 79.90 con 50% de Dscto por 12 meses</h5> <!-- Título que describe el plan y su descuento -->
+                <div class="star"> <!-- Contenedor para las estrellas de calificación -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                </div>
+                <h4>S/39.90</h4> <!-- Precio del producto -->
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a> <!-- Enlace al carrito de compras con un icono -->
+        </div> <!-- Fin del contenedor del producto -->
+        
+        <div class="pro"> <!-- Inicio de un contenedor para otro producto -->
+            <img src="image/portabilidad/4.png" alt=""> <!-- Imagen del segundo producto -->
+            <div class="des"> <!-- Contenedor para la descripción del segundo producto -->
+                <span>Portabilidad</span> <!-- Etiqueta que indica el tipo de producto -->
+                <h5>Plan 49.90 con 50% de Dscto por 3 meses</h5> <!-- Título que describe el plan y su descuento -->
+                <div class="star"> <!-- Contenedor para las estrellas de calificación -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                </div>
+                <h4>S/24.90</h4> <!-- Precio del segundo producto -->
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a> <!-- Enlace al carrito de compras con un icono -->
+        </div> <!-- Fin del contenedor del segundo producto -->
+        
+        <div class="pro"> <!-- Inicio de un contenedor para un tercer producto -->
+            <img src="image/portabilidad/5.png" alt=""> <!-- Imagen del tercer producto -->
+            <div class="des"> <!-- Contenedor para la descripción del tercer producto -->
+                <span>Portabilidad</span> <!-- Etiqueta que indica el tipo de producto -->
+                <h5>Plan 39.90 Por Siempre + 80Gb por 6 meses</h5> <!-- Título que describe el plan y su oferta -->
+                <div class="star"> <!-- Contenedor para las estrellas de calificación -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                    <i class="fas fa-star"></i> <!-- Icono de estrella (calificación) -->
+                </div>
+                <h4>S/39.90</h4> <!-- Precio del tercer producto -->
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a> <!-- Enlace al carrito de compras con un icono -->
+        </div> <!-- Fin del contenedor del tercer producto -->
+
+            <div class="pro">
+                <img src="image/portabilidad/6.png" alt="">
+                <div class="des">
+                    <span>Portabilidad</span>
+                    <h5>Plan 109.90 con 50% de Dscto por 12 meses</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>S/54.90</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="image/portabilidad/7.png" alt="">
+                <div class="des">
+                    <span>Portabilidad</span>
+                    <h5>Plan 29.90 por siempre + 50GB por 5 meses</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>S/29.90</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="image/Linea nueva/1.png" alt="">
+                <div class="des">
+                    <span>Linea Nueva</span>
+                    <h5>Plan 39.90 por siempre</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>S/39.90</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Servicios adicionales</h4>
+        <h2>Hasta <span>70% de descuento</span> En Telefonía Móvil</h2>
+        <button class="normal">Explorar Más</button>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Recien Llegados</h2>
+        <P>Descuentos Insuperables en Telefonía Móvil</P>
+        <div class="pro-container">
+
+            <div class="pro">
+                <img src="image/new arrivals/Galaxy A03 core.png" alt="">
+                <div class="des">
+                    <span>Samsung</span>
+                    <h5>Galaxy A03 core</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>S/299</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="image/new arrivals/Galaxy A04.png" alt="">
+                <div class="des">
+                    <span>Samsung</span>
+                    <h5>Galaxy A04</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>S/349</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="image/new arrivals/Galaxy A04e.png" alt="">
+                <div class="des">
+                    <span>Samsung</span>
+                    <h5>Galaxy A04e</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>S/339</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="image/new arrivals/Moto G22.png" alt="">
+                <div class="des">
+                    <span>Motorola</span>
+                    <h5>Moto G22</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>S/539</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="image/new arrivals/Redmi 12 (2).png" alt="">
+                <div class="des">
+                    <span>LG</span>
+                    <h5>LG k40S</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>S/259</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="image/new arrivals/Redmi 12.png" alt="">
+                <div class="des">
+                    <span>Xiaomi</span>
+                    <h5>Redmi 12, 8 Ram</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>S/.599</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="image/new arrivals/NOKIA 110 (3).png" alt="">
+                <div class="des">
+                    <span>Verykool</span>
+                    <h5>Verykool 13320</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>S/79</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="image/new arrivals/NOKIA 110.png" alt="">
+                <div class="des">
+                    <span>Nokia</span>
+                    <h5>Nokia 110</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>S/79</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Ofertas Especiales</h4>
+            <h2>El segundo Gatis</h2>
+            <span>El mejor descuento en lineas adicionales está en Oferta</span>
+            <button class="white">Saber más</button>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h4>Ofertas Especiales</h4>
+            <h2>Proximamente</h2>
+            <span>Los planes tiene los mejores descuentos</span>
+            <button class="white">Coleccion</button>
+        </div>
+    </section>
+
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>Liquidacion</h2>
+            <h3>Nuevos ingresos 50% de Descuento</h3>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h2>Nuevos ingresos Moviles</h2>
+            <h3>Descuento mayor del año</h3>
+        </div>
+
+        <div class="banner-box banner-box3">
+            <h2>Celulares Moviles 3G, 4G y 5G</h2>
+            <h3>Modelos Variados </h3>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newtext">
+            <h4>Suscríbete a las Promociones</h4>
+            <p>Reciba información actualizada por correo sobre nuestra última tienda y <span>ofertas
+                    especiales.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Ingresa tu correo">
+            <button class="normal">Inscribirse</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="image/Diseño sin título (15).png" alt="">
+            <h4>Contacto</h4>
+            <p> <strong>Direccion: </strong>Av.Balta 1092, Lambayeque-Chiclayo.</p>
+            <p> <strong>Telefono:</strong> +51 920 472 988</p>
+            <p> <strong>Atencion: </strong> De 9:00am a 9pm, Lunes a Sabado</p>
+            <div class="follow">
+                <h4>Siganos</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Acerca de</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Información</a>
+            <a href="#">Politicas de Privacidad</a>
+            <a href="#">Terminos y condiciones</a>
+            <a href="#">Contáctanos</a>
+        </div>
+
+        <div class="col">
+            <h4>Mi cuenta</h4>
+            <a href="#">Iniciar Sesion</a>
+            <a href="#">Ver carrito</a>
+            <a href="#">Lista de deseos</a>
+            <a href="#">Rastrear mi pedido</a>
+            <a href="#">Ayuda</a>
+        </div>
+
+        <div class="copyright">
+            <p> © 2024, Bitel Peru</p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1618 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Importa la fuente "Spartan" desde Google Fonts, permitiendo varios pesos de la fuente. */
+
+/* 
+   - Aplica un reset de márgenes y rellenos a todos los elementos para evitar inconsistencias en el diseño.
+   - Establece el modelo de caja para que el ancho y alto incluyan el padding y el borde.
+   - Define la fuente predeterminada como "Spartan" para todos los elementos. 
+*/
+* {
+  margin: 0;
+  /* Elimina el margen por defecto de todos los elementos */
+  padding: 0;
+  /* Elimina el padding por defecto de todos los elementos */
+  box-sizing: border-box;
+  /* Incluye el padding y el borde en el cálculo del ancho y alto de los elementos */
+  font-family: "Spartan", sans-serif;
+  /* Establece la fuente "Spartan" como la fuente principal, con una alternativa sans-serif */
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Habilita un desplazamiento suave al hacer clic en enlaces de anclaje */
+}
+
+/* Sección para definir estilos globales para encabezados y párrafos. */
+
+h1 {
+  font-size: 50px;
+  /* Establece el tamaño de fuente para h1 a 50 píxeles */
+  line-height: 64px;
+  /* Establece la altura de línea para h1 a 64 píxeles */
+  color: #222;
+  /* Establece el color del texto de h1 a un gris oscuro */
+}
+
+h2 {
+  font-size: 46px;
+  /* Establece el tamaño de fuente para h2 a 46 píxeles */
+  line-height: 54px;
+  /* Establece la altura de línea para h2 a 54 píxeles */
+  color: #222;
+  /* Establece el color del texto de h2 a un gris oscuro */
+}
+
+h4 {
+  font-size: 20px;
+  /* Establece el tamaño de fuente para h4 a 20 píxeles */
+  color: #222;
+  /* Establece el color del texto de h4 a un gris oscuro */
+}
+
+h6 {
+  font-weight: 700;
+  /* Establece el peso de la fuente para h6 a negrita (700) */
+  font-size: 12px;
+  /* Establece el tamaño de fuente para h6 a 12 píxeles */
+}
+
+p {
+  font-size: 16px;
+  /* Establece el tamaño de fuente para párrafos a 16 píxeles */
+  color: #465b52;
+  /* Establece el color del texto de los párrafos a un verde grisáceo */
+  margin: 15px 0 20px 0;
+  /* Establece un margen superior de 15 píxeles y un margen inferior de 20 píxeles, sin margen lateral */
+}
+
+.section-p1 {
+  padding: 40px 80px;
+  /* Establece un padding de 40 píxeles arriba y abajo, y 80 píxeles a los lados */
+}
+
+.section-m1 {
+  margin: 40px 0;
+  /* Establece un margen de 40 píxeles arriba y abajo, sin margen lateral */
+}
+
+button.normal {
+  font-size: 14px;
+  /* Establece el tamaño de fuente para botones normales a 14 píxeles */
+  font-weight: 600;
+  /* Establece el peso de la fuente para botones normales a semi-negrita (600) */
+  padding: 15px 30px;
+  /* Establece un padding de 15 píxeles arriba y abajo, y 30 píxeles a los lados */
+  color: #000;
+  /* Establece el color del texto del botón normal a negro */
+  background-color: #fff;
+  /* Establece el color de fondo del botón normal a blanco */
+  border-radius: 4px;
+  /* Establece un borde redondeado de 4 píxeles para el botón normal */
+  cursor: pointer;
+  /* Cambia el cursor a una mano al pasar sobre el botón */
+  border: none;
+  /* Elimina el borde del botón normal */
+  outline: none;
+  /* Elimina el contorno del botón normal al ser enfocado */
+  transition: 0.2s;
+  /* Establece una transición suave de 0.2 segundos para cambios de estilo */
+}
+
+button.white {
+  font-size: 13px;
+  /* Establece el tamaño de fuente para botones blancos a 13 píxeles */
+  font-weight: 600;
+  /* Establece el peso de la fuente para botones blancos a semi-negrita (600) */
+  padding: 11px 18px;
+  /* Establece un padding de 11 píxeles arriba y abajo, y 18 píxeles a los lados */
+  color: #fff;
+  /* Establece el color del texto del botón blanco a blanco */
+  background-color: transparent;
+  /* Establece el color de fondo del botón blanco como transparente */
+  cursor: pointer;
+  /* Cambia el cursor a una mano al pasar sobre el botón */
+  border: 1px solid #fff;
+  /* Establece un borde blanco de 1 píxel para el botón blanco */
+  outline: none
+}
+
+body {
+  width: 100%;
+  /* Establece el ancho del elemento <body> al 100% del ancho de la ventana del navegador */
+}
+
+#header {
+  display: flex;
+  /* Utiliza el modelo de caja flexible (flexbox) para el contenedor del encabezado, permitiendo un diseño más dinámico */
+  align-items: center;
+  /* Alinea verticalmente los elementos hijos del encabezado al centro */
+  justify-content: space-between;
+  /* Distribuye los elementos hijos del encabezado con espacio entre ellos, empujándolos a los extremos */
+  padding: 20px 80px;
+  /* Establece un padding de 20 píxeles arriba y abajo, y 80 píxeles a los lados del encabezado */
+  background-color: #ffffff;
+  /* Establece el color de fondo del encabezado a blanco */
+  box-shadow: 0 5px 15 rgba(0, 0, 0, 0.06);
+  /* Aplica una sombra sutil al encabezado, con un desplazamiento de 0 píxeles a la izquierda, 5 píxeles hacia abajo, y un desenfoque de 15 píxeles */
+  z-index: 999;
+  /* Establece el índice z del encabezado a 999, asegurando que esté por encima de otros elementos en la página */
+  position: sticky;
+  /* Hace que el encabezado se mantenga en la parte superior de la ventana al hacer scroll */
+  top: 0;
+  /* Establece la posición superior del encabezado en 0 píxeles, manteniéndolo en la parte superior de la ventana */
+  left: 0;
+  /* Establece la posición izquierda del encabezado en 0 píxeles, alineándolo al borde izquierdo de la ventana */
+}
+
+#navbar {
+  display: flex;
+  /* Establece el contenedor #navbar como un contenedor flexible, permitiendo que sus hijos se alineen de manera flexible. */
+  align-items: center;
+  /* Alinea verticalmente los elementos hijos en el centro del contenedor. */
+  justify-content: center;
+  /* Centra los elementos hijos horizontalmente dentro del contenedor. */
+}
+
+#navbar li {
+  list-style-type: none;
+  /* Elimina los puntos de las listas (bullets) en los elementos de la lista. */
+  padding: 0 20px;
+  /* Agrega un padding horizontal de 20px a cada elemento de la lista. */
+  position: relative;
+  /* Establece la posición relativa para permitir el posicionamiento absoluto de elementos hijos. */
+}
+
+#navbar li a {
+  text-decoration: none;
+  /* Elimina el subrayado de los enlaces. */
+  font-size: 16px;
+  /* Establece el tamaño de la fuente de los enlaces a 16px. */
+  font-weight: 600;
+  /* Establece el peso de la fuente a 600, lo que la hace más gruesa. */
+  color: #1a1a1a;
+  /* Establece el color del texto de los enlaces a un gris oscuro. */
+  transition: 0.3s ease;
+  /* Agrega una transición suave de 0.3 segundos para cambios en las propiedades CSS. */
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+  /* Cambia el color del texto a un tono verde cuando el enlace está en estado hover o es activo. */
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  /* Crea un pseudo-elemento después del enlace, sin contenido visible. */
+  width: 30%;
+  /* Establece el ancho del pseudo-elemento a 30% del ancho del enlace. */
+  height: 2px;
+  /* Establece la altura del pseudo-elemento a 2px. */
+  background: #088178;
+  /* Establece el color de fondo del pseudo-elemento al mismo verde que el texto en hover/activo. */
+  position: absolute;
+  /* Posiciona el pseudo-elemento de manera absoluta respecto al elemento padre (el enlace). */
+  bottom: -4px;
+  /* Coloca el pseudo-elemento 4px por debajo del enlace. */
+  left: 20px;
+  /* Coloca el pseudo-elemento 20px desde la izquierda del enlace. */
+}
+
+#mobile {
+  display: none;
+  /* Oculta el elemento con el ID 'mobile' por defecto. */
+  align-items: center;
+  /* Alinea verticalmente los elementos hijos en el centro (aunque no se mostrará por estar oculto). */
+}
+
+#close {
+  display: none;
+  /* Oculta el elemento con el ID 'close' por defecto. */
+}
+
+
+
+
+
+
+/*Home Page*/
+#hero {
+  background-image: url(image/Banner/Banner2.png);
+  /* Establece una imagen de fondo para el elemento con ID "hero" */
+
+  height: 90vh;
+  /* Establece la altura del elemento "hero" al 90% de la altura de la ventana del navegador */
+  width: 100%;
+  /* Establece el ancho del elemento "hero" al 100% del ancho de su contenedor */
+  background-size: cover;
+  /* Asegura que la imagen de fondo cubra todo el área del elemento, manteniendo su proporción */
+  background-position: top 25% right 0;
+  /* Posiciona la imagen de fondo, desplazándola 25% desde la parte superior y alineándola a la derecha */
+  padding: 0 80px;
+  /* Establece un padding de 0 píxeles arriba y abajo, y 80 píxeles a los lados */
+  display: flex;
+  /* Utiliza el modelo de caja flexible (flexbox) para el contenedor "hero" */
+  flex-direction: column;
+  /* Organiza los elementos hijos en una columna */
+  align-items: flex-start;
+  /* Alinea los elementos hijos al inicio del eje transversal (izquierda) */
+  justify-content: center;
+  /* Centra los elementos hijos a lo largo del eje principal (verticalmente en este caso) */
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+  /* Establece un padding inferior de 15 píxeles para el encabezado h4 dentro de "hero" */
+  color: #088178;
+  /* Establece el color del texto de h4 a un verde oscuro */
+}
+
+#hero h1 {
+  color: #ffe111;
+  /* Establece el color del texto de h1 a un amarillo brillante */
+}
+
+#hero h2 {
+  color: #fff;
+}
+
+#hero p {
+  color: #fff;
+}
+
+#hero button {
+  background-image: url(image/buton.png);
+  /* Establece una imagen de fondo para el botón dentro de "hero" */
+  background-color: transparent;
+  /* Establece el color de fondo del botón como transparente */
+  color: #ffe111;
+  /* Establece el color del texto del botón a amarillo brillante */
+  border: 0;
+  /* Elimina el borde del botón */
+  padding: 14px 80px 14px 50px;
+  /* Establece un padding de 14 píxeles arriba y abajo, 80 píxeles a la derecha y 50 píxeles a la izquierda */
+  background-repeat: no-repeat;
+  /* Evita que la imagen de fondo del botón se repita */
+  cursor: pointer;
+  /* Cambia el cursor a una mano al pasar sobre el botón */
+  font-weight: 700;
+  /* Establece el peso de la fuente del botón a negrita (700) */
+  font-size: 15px;
+  /* Establece el tamaño de fuente del botón a 15 píxeles */
+}
+
+#feature {
+  display: flex;
+  /* Utiliza el modelo de caja flexible (flexbox) para el contenedor "feature" */
+  align-items: center;
+  /* Alinea verticalmente los elementos hijos del contenedor "feature" al centro */
+  justify-content: space-between;
+  /* Distribuye los elementos hijos del contenedor "feature" con espacio entre ellos */
+  flex-wrap: wrap;
+  /* Permite que los elementos hijos se envuelvan en varias líneas si no hay suficiente espacio */
+}
+
+#feature .fe-box {
+  width: 180px;
+  /* Establece el ancho de cada caja de características a 180 píxeles */
+  text-align: center;
+  /* Centra el texto dentro de cada caja de características */
+  padding: 25px 15px;
+  /* Establece un padding de 25 píxeles arriba y abajo, y 15 píxeles a los lados */
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  /* Aplica una sombra sutil a cada caja de características */
+  border: 1px solid #037789;
+  /* Establece un borde sólido de 1 píxel de color verde oscuro alrededor de cada caja */
+  border-radius: 10px;
+  /* Redondea los bordes de cada caja con un radio de 10 píxeles */
+  margin: 15px 0;
+  /* Establece un margen de 15 píxeles arriba y abajo, sin margen lateral */
+}
+
+#feature .fe-box:hover {
+  box-shadow: 20px 20px 34px #000;
+  /* Cambia la sombra de la caja de características al pasar el mouse, dándole un efecto de profundidad */
+}
+
+#feature .fe-box img {
+  width: 100%;
+  /* Establece el ancho de las imágenes dentro de las cajas de características al*/
+}
+
+/* Estilo para el encabezado h6 dentro de un contenedor con la clase 'fe-box' que está dentro de un elemento con la clase 'feature' */
+#feature .fe-box h6 {
+  padding: 9px 8px 6px 8px;
+  /* Espaciado interno: 9px arriba, 8px derecha, 6px abajo, 8px izquierda */
+  line-height: 1;
+  /* Altura de línea ajustada a 1 para un espaciado compacto */
+  border-radius: 4px;
+  /* Bordes redondeados con un radio de 4px */
+  color: #088178;
+  /* Color del texto en un tono verde azulado */
+  background-color: #ffe111;
+  /* Color de fondo en un tono amarillo brillante */
+}
+
+/* Estilo para el contenedor del producto con el id 'product1' */
+#product1 {
+  text-align: center;
+  /* Centra el texto dentro del contenedor */
+}
+
+/* Estilo para el contenedor de productos dentro de 'product1' */
+#product1 .pro-container {
+  display: flex;
+  /* Utiliza un modelo de caja flexible para el diseño */
+  justify-content: space-between;
+  /* Espacia los elementos hijos de manera uniforme */
+  padding-top: 20;
+  /* Espaciado superior de 20px (debería tener 'px' para ser válido) */
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+}
+
+/* Estilo para cada producto dentro del contenedor de productos */
+#product1 .pro {
+  width: 23%;
+  /* Ancho del producto establecido al 23% del contenedor padre */
+  min-width: 250px;
+  /* Ancho mínimo de 250px para asegurar que no se reduzca demasiado */
+  padding: 10px 12px;
+  /* Espaciado interno: 10px arriba y abajo, 12px a los lados */
+  border: 1px solid #088178;
+  /* Borde sólido de 1px en el mismo color que el texto */
+  border-radius: 25px;
+  /* Bordes redondeados con un radio de 25px */
+  cursor: pointer;
+  /* Cambia el cursor a una mano al pasar sobre el elemento, indicando que es interactivo */
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  /* Sombra sutil para dar profundidad al elemento */
+  margin: 15px 0;
+  /* Margen vertical de 15px arriba y abajo */
+  transition: 0.2s ease;
+  /* Transición suave de 0.2 segundos para cambios de estilo */
+  position: relative;
+  /* Posicionamiento relativo para permitir el uso de posicionamiento absoluto en elementos hijos */
+}
+
+/* Estilo para el efecto hover en los productos dentro de 'product1' */
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  /* Mantiene la misma sombra al pasar el mouse, se puede ajustar para un efecto diferente */
+}
+
+/* Estilo para las imágenes dentro de cada producto */
+#product1 .pro img {
+  width: 100%;
+  /* La imagen ocupa el 100% del ancho del contenedor padre */
+  border-radius: 20px;
+  /* Bordes redondeados con un radio de 20px para suavizar la apariencia de la imagen */
+}
+
+/* Estilo para la descripción del producto */
+#product1 .pro .des {
+  text-align: start;
+  /* Alinea el texto al inicio (izquierda en LTR) */
+  padding: 10px 0;
+  /* Espaciado interno vertical de 10px arriba y abajo */
+}
+
+/* Estilo para los elementos span dentro de la descripción */
+#product1 .pro .des span {
+  color: #606063;
+  /* Color del texto en un tono gris oscuro */
+  font-size: 12px;
+  /* Tamaño de fuente de 12px */
+}
+
+/* Estilo para los encabezados h5 dentro de la descripción */
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  /* Espaciado superior de 7px */
+  color: #1a1a1a;
+  /* Color del texto en un tono negro suave */
+  font-size: 14px;
+  /* Tamaño de fuente de 14px */
+}
+
+/* Estilo para los iconos dentro de la descripción */
+#product1 .pro .des i {
+  font-size: 12px;
+  /* Tamaño de fuente de 12px para los iconos */
+  color: rgba(243, 181, 25);
+  /* Color del icono en un tono amarillo dorado */
+}
+
+/* Estilo para los encabezados h4 dentro de la descripción */
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  /* Espaciado superior de 7px */
+  font-size: 15px;
+  /* Tamaño de fuente de 15px */
+  font-weight: 700;
+  /* Peso de fuente en negrita */
+  color: #037789;
+  /* Color del texto en un tono verde azulado */
+}
+
+/* Estilo para el botón de carrito dentro de cada producto */
+#product1 .pro .cart {
+  width: 40px;
+  /* Ancho del botón de carrito de 40px */
+  height: 40px;
+  /* Altura del botón de carrito de 40px */
+  line-height: 40px;
+  /* Altura de línea igual a la altura para centrar el texto verticalmente */
+  border-radius: 50px;
+  /* Bordes redondeados con un radio de 50px para un efecto circular */
+  background-color: #e8f6ea;
+  /* Color de fondo en un tono verde claro */
+  font-weight: 500;
+  /* Peso de fuente medio */
+  color: #088178;
+  /* Color del texto en un tono verde azulado */
+  border: 1px solid #cce7d0;
+  /* Borde sólido de 1px en un tono verde claro */
+  position: absolute;
+  /* Posicionamiento absoluto para colocar el botón en relación a su contenedor */
+  bottom: 20px;
+  /* Coloca el botón a 20px del fondo del contenedor */
+  right: 10px;
+  /* Coloca el botón a 10px del lado derecho del contenedor */
+}
+
+/* Estilo para el banner principal */
+#banner {
+  display: flex;
+  /* Utiliza un modelo de caja flexible para el diseño */
+  flex-direction: column;
+  /* Organiza los elementos en una columna */
+  justify-content: center;
+  /* Centra los elementos verticalmente */
+  align-items: center;
+  /* Centra los elementos horizontalmente */
+  text-align: center;
+  /* Alinea el texto al centro */
+  background-image: url(image/portadaprev.jpg);
+  /* Establece una imagen de fondo */
+  width: 100%;
+  /* Ancho del banner al 100% del contenedor padre */
+  height: 40vh;
+  /* Altura del banner al 40% de la altura de la ventana */
+  background-size: cover;
+  /* Asegura que la imagen de fondo cubra todo el contenedor */
+  background-position: center;
+  /* Centra la imagen de fondo */
+}
+
+/* Estilo para el encabezado h4 dentro del banner */
+#banner h4 {
+  color: #fff;
+  /* Color del texto en blanco */
+  font-size: 16px;
+  /* Tamaño de fuente de 16px */
+}
+
+/* Estilo para el encabezado h2 dentro del banner */
+#banner h2 {
+  color: #037789;
+  /* Color del texto en blanco */
+  font-size: 30px;
+  /* Tamaño de fuente de 30px */
+  padding: 10px 0;
+  /* Espaciado vertical de 10px arriba y abajo */
+}
+
+/* Estilo para el span dentro del encabezado h2 */
+#banner h2 span {
+  color: #ffe111;
+  /* Color del texto en un tono amarillo brillante */
+}
+
+/* Estilo para el botón dentro del banner al pasar el mouse */
+#banner button:hover {
+  background-color: #088178;
+  /* Cambia el color de fondo a verde azulado al pasar el mouse */
+  color: #fff;
+  /* Cambia el color del texto a blanco al pasar el mouse */
+}
+
+/* Estilo para el banner secundario */
+#sm-banner {
+  display: flex;
+  /* Utiliza un modelo de caja flexible para el diseño */
+  justify-content: space-between;
+  /* Espacia los elementos hijos de manera uniforme */
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+}
+
+/* Estilo para cada caja del banner secundario */
+#sm-banner .banner-box {
+  display: flex;
+  /* Utiliza un modelo de caja flexible para el diseño */
+  flex-direction: column;
+  /* Organiza los elementos en una columna */
+  justify-content: center;
+  /* Centra los elementos verticalmente */
+  align-items: flex-start;
+  /* Alinea los elementos al inicio (izquierda) */
+  background-image: url(image/Banner/banner3.png);
+  /* Establece una imagen de fondo */
+  min-width: 580px;
+  /* Ancho mínimo de 580px */
+  height: 50vh;
+  /* Altura del banner al 50% de la altura de la ventana */
+  background-size: cover;
+  /* Asegura que la imagen de fondo cubra todo el contenedor */
+  background-position: center;
+  /* Centra la imagen de fondo */
+  padding: 30px;
+  /* Espaciado interno de 30px */
+}
+
+/* Estilo para el encabezado h4 dentro del banner secundario */
+#sm-banner h4 {
+  color: #fff;
+  /* Color del texto en blanco */
+  font-size: 20px;
+  /* Tamaño de fuente de 20px */
+  font-weight: 300;
+  /* Peso de fuente ligero */
+}
+
+/* Estilo para el encabezado h2 dentro del banner secundario */
+#sm-banner h2 {
+  color: #fff;
+  /* Color del texto en blanco */
+  font-size: 28px;
+  /* Tamaño de fuente de 28px */
+  font-weight: 800;
+  /* Peso de fuente en negrita */
+}
+
+/* Estilo para los elementos span dentro del banner secundario */
+#sm-banner span {
+  color: #fff;
+  /* Color del texto en blanco */
+  font-size: 14px;
+  /* Tamaño de fuente de 14px */
+  font-weight: 500;
+  /* Peso de fuente medio */
+  padding-bottom: 15px;
+  /* Espaciado inferior de 15px */
+}
+
+/* Estilo para el botón dentro de las cajas del banner secundario al pasar el mouse */
+#sm-banner .banner-box:hover button {
+  background-color: #088178;
+  /* Cambia el color de fondo a verde azulado al pasar el mouse */
+  border: 1px solid #037789;
+  /* Agrega un borde sólido de color verde azulado */
+}
+
+/* Estilo para el banner3 */
+#banner3 {
+  display: flex;
+  /* Utiliza un modelo de caja flexible para el diseño */
+}
+
+
+
+
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+
+
+#banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(image/Banner/banner7.png);
+  min-width: 30px;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#banner3 .banner-box2 {
+  background-image: url(image/Banner/banner8.png);
+}
+
+#banner3 .banner-box3 {
+  background-image: url(image/Banner/banner9.png);
+}
+
+/* Estilo para el contenedor del banner3 */
+#banner3 {
+  display: flex;
+  /* Utiliza un modelo de caja flexible para el diseño */
+  justify-content: space-between;
+  /* Espacia los elementos hijos de manera uniforme */
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+  padding: 0 80px;
+  /* Espaciado interno horizontal de 80px a los lados */
+}
+
+/* Estilo para cada caja dentro del banner3 */
+#banner3 .banner-box {
+  display: flex;
+  /* Utiliza un modelo de caja flexible para el diseño */
+  flex-direction: column;
+  /* Organiza los elementos en una columna */
+  justify-content: center;
+  /* Centra los elementos verticalmente */
+  align-items: flex-start;
+  /* Alinea los elementos al inicio (izquierda) */
+  background-image: url(image/Banner/banner7.png);
+  /* Establece una imagen de fondo */
+  min-width: 30px;
+  /* Ancho mínimo de 30px (debería ser mayor para un diseño efectivo) */
+  height: 30vh;
+  /* Altura del banner al 30% de la altura de la ventana */
+  background-size: cover;
+  /* Asegura que la imagen de fondo cubra todo el contenedor */
+  background-position: center;
+  /* Centra la imagen de fondo */
+  padding: 20px;
+  /* Espaciado interno de 20px */
+  margin-bottom: 20px;
+  /* Margen inferior de 20px para separar las cajas */
+}
+
+/* Estilo específico para la segunda caja dentro del banner3 */
+#banner3 .banner-box2 {
+  background-image: url(image/Banner/banner8.png);
+  /* Establece una imagen de fondo diferente */
+}
+
+/* Estilo específico para la tercera caja dentro del banner3 */
+#banner3 .banner-box3 {
+  background-image: url(image/Banner/banner9.png);
+  /* Establece una imagen de fondo diferente */
+}
+
+/* Estilo para el encabezado h2 dentro del banner3 */
+#banner3 h2 {
+  color: #fff;
+  /* Color del texto en blanco */
+  font-weight: 900;
+  /* Peso de fuente en negrita */
+  font-size: 22px;
+  /* Tamaño de fuente de 22px */
+}
+
+/* Estilo para el encabezado h3 dentro del banner3 */
+#banner3 h3 {
+  color: #000;
+  /* Color del texto en negro */
+  font-weight: 900;
+  /* Peso de fuente en negrita */
+  font-size: 15px;
+  /* Tamaño de fuente de 15px */
+}
+
+/* Estilo para el contenedor del boletín (newsletter) */
+#newsletter {
+  display: flex;
+  /* Utiliza un modelo de caja flexible para el diseño */
+  justify-content: space-between;
+  /* Espacia los elementos hijos de manera uniforme */
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+  align-items: center;
+  /* Centra los elementos verticalmente */
+  background-image: url(image/Banner/banner10.png);
+  /* Establece una imagen de fondo */
+}
+
+/* Estilo para el encabezado h4 dentro del boletín */
+#newsletter h4 {
+  font-size: 22px;
+  /* Tamaño de fuente de 22px */
+  font-weight: 700;
+  /* Peso de fuente en negrita */
+  color: #fff;
+  /* Color del texto en blanco */
+}
+
+/* Estilo para los párrafos dentro del boletín */
+#newsletter p {
+  font-size: 14;
+  /* Tamaño de fuente de 14px (debería incluir 'px' para ser válido) */
+  font-weight: 600;
+  /* Peso de fuente medio */
+  color: #000;
+  /* Color del texto en negro */
+}
+
+/* Estilo para los elementos span dentro de los párrafos del boletín */
+#newsletter p span {
+  color: #ffe111;
+  /* Color del texto en un tono amarillo brillante */
+}
+
+/* Estilo para el formulario dentro del boletín */
+#newsletter .form {
+  display: flex;
+  /* Utiliza un modelo de caja flexible para el diseño */
+  width: 40%;
+  /* Ancho del formulario al 40% del contenedor padre */
+}
+
+/* Estilo para los campos de entrada dentro del formulario del boletín */
+#newsletter input {
+  height: 3.125rem;
+  /* Altura del campo de entrada, equivalente a 50px */
+  padding: 0 1.25rem;
+  /* Espaciado interno horizontal de 1.25rem (20px) */
+  font-size: 14px;
+  /* Tamaño de fuente de 14px */
+  width: 100%;
+  /* Ancho del campo de entrada al 100% del contenedor padre */
+  border: 1px solid transparent;
+  /* Borde de 1px, inicialmente transparente */
+  border-radius: 4px;
+  /* Bordes redondeados con un radio de 4px */
+  outline: none;
+  /* Elimina el contorno predeterminado al enfocar el campo */
+  border-top-right-radius: 0;
+  /* Elimina el borde redondeado en la esquina superior derecha */
+  border-bottom-right-radius: 0;
+  /* Elimina el borde redondeado en la esquina inferior derecha */
+}
+
+/* Estilo para el botón dentro del formulario del boletín */
+#newsletter button {
+  background-color: #088178;
+  /* Color de fondo del botón en un tono verde azulado */
+  color: #fff;
+  /* Color del texto en blanco */
+  white-space: nowrap;
+  /* Evita que el texto se divida en varias líneas */
+  border-top-left-radius: 0;
+  /* Elimina el borde redondeado en la esquina superior izquierda */
+  border-bottom-left-radius: 0;
+  /* Elimina el borde redondeado en la esquina inferior izquierda */
+}
+
+/* Estilo para el pie de página (footer) */
+footer {
+  display: flex;
+  /* Utiliza un modelo de caja flexible para el diseño */
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+  justify-content: space-between;
+  /* Espacia los elementos hijos de manera uniforme */
+}
+
+/* Estilo para las columnas dentro del pie de página */
+footer .col {
+  display: flex;
+  /* Utiliza un modelo de caja flexible para el diseño */
+  flex-direction: column;
+  /* Organiza los elementos en una columna */
+  align-items: flex-start;
+  /* Alinea los elementos al inicio (izquierda) */
+  margin-bottom: 20px;
+  /* Margen inferior de 20px para separar las columnas */
+}
+
+/* Estilo para el logo dentro del pie de página */
+footer .logo {
+  margin-bottom: 30px;
+  /* Margen inferior de 30px para separar el logo de otros elementos */
+}
+
+/* Estilo para el encabezado h4 dentro del pie de página */
+footer h4 {
+  font-size: 14px;
+  /* Tamaño de fuente de 14px */
+  padding-bottom: 20px;
+  /* Espaciado inferior de 20px */
+}
+
+/* Estilo para los párrafos dentro del pie de página */
+footer p {
+  font-size: 13px;
+  /* Tamaño de fuente de 13px */
+  margin: 0 0 8px 0;
+  /* Margen superior e inferior de 0, margen inferior de 8px */
+}
+
+/* Estilo para los enlaces dentro del pie de página */
+footer a {
+  font-size: 13px;
+  /* Tamaño de fuente de 13px */
+  text-decoration: none;
+  /* Elimina el subrayado del texto del enlace */
+  color: #222;
+  /* Color del texto en un tono gris oscuro */
+  margin: 0 0 8px 0;
+  /* Margen superior e inferior de 0, margen inferior de 8px */
+}
+
+/* Estilo para la sección de seguimiento en el pie de página */
+footer .follow {
+  margin-top: 20px;
+  /* Margen superior de 20px para separar esta sección de otros elementos */
+}
+
+/* Estilo para los iconos dentro de la sección de seguimiento en el pie de página */
+footer .follow i {
+  color: #606063;
+  /* Color del icono en un tono gris oscuro */
+  padding-right: 4px;
+  /* Espaciado a la derecha del icono de 4px */
+  cursor: pointer;
+  /* Cambia el cursor a una mano al pasar sobre el icono, indicando que es interactivo */
+}
+
+/* Estilo para los iconos y enlaces en el pie de página al pasar el mouse */
+footer .follow i:hover,
+footer a:hover {
+  color: #037789;
+  /* Cambia el color del icono y del enlace a un tono verde azulado al pasar el mouse */
+}
+
+/* Estilo para la sección de derechos de autor en el pie de página */
+footer .copyright {
+  width: 100%;
+  /* Ancho del contenedor de derechos de autor al 100% del contenedor padre */
+  text-align: center;
+  /* Centra el texto dentro del contenedor */
+}
+
+
+/* Estilo para la página del carrito */
+
+#page-header {
+  background-image: url(image/Banner/banner\ tienda.png);
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header2,
+#page-header p {
+  color: #fff;
+}
+
+#pagination {
+  text-align: center;
+}
+
+
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Single Product */
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+
+
+#prodetails .single-pro-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+
+#prodetails .single-pro-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+  padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+  font-size: 26px;
+}
+
+
+#prodetails .single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus {
+  outline: none;
+}
+
+#prodetails .single-pro-details button {
+  background-color: #088178;
+  color: #fff;
+}
+
+#prodetails .single-pro-details {
+  line-height: 25px;
+}
+
+/* blog-page */
+
+#page-header .blog-header {
+  background-image: url(image/Banner/banner\ blog.png);
+}
+
+#blog {
+  padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+#blog .blog-img {
+  width: 100%;
+  margin-right: 40px;
+
+}
+
+#blog .img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#blog .blog-details {
+  width: 100%;
+}
+
+#blog .blog-details a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+  transition: 0.2s;
+}
+
+#blog .blog-details a::after {
+
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+#blog .blog-details a:hover {
+  color: #088178;
+}
+
+#blog .blog-details a:hover::after {
+  color: #088178;
+}
+
+#blog .blog-box h1 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c9cbce;
+  z-index: -9;
+
+}
+
+/* contact-page */
+
+
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact-details .details {
+  width: 40%;
+}
+
+#contact-details .details span,
+#form-details form h2 {
+  font-size: 12px;
+
+}
+
+#contact-details .details h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+#contact-details .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+#contact-details .details li i {
+  font-size: 14px;
+  padding-right: 22px;
+}
+
+#contact-details .details li p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#form-details {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+
+}
+
+
+
+
+
+
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #088178;
+}
+
+#form-details form button {
+  background-color: #088178;
+  color: #fff;
+}
+
+
+/* cart-page */
+#cart{
+  overflow-x: auto;
+}
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+} 
+
+#cart table img {
+  width: 70px;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 5px;
+}
+
+#cart table thead {
+  border: 1px solid #E3E6F3;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+
+#cart table tbody tr td {
+  padding: 15px;
+}
+
+
+#cart table tbody td {
+  font-size: 13px;
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#cupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#cupon h3 {
+  padding-bottom: 15px;
+}
+
+#cupon input, #subtotal h3{
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #c9cbce;
+}
+
+
+#cupon button, #subtotal button{
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+
+
+#subtotal{
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+
+#subtotal table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td{
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Inicio de la consulta de medios (media query) */
+.section-p1 {
+  padding: 40px 40px;
+  /* Espaciado interno de 40px en todos los lados */
+}
+
+/* Consulta de medios para pantallas con un ancho máximo de 799px */
+@media(max-width: 799px) {
+  #navbar {
+    display: flex;
+    /* Utiliza un modelo de caja flexible para el diseño */
+    flex-direction: column;
+    /* Organiza los elementos en una columna */
+    align-items: flex-start;
+    /* Alinea los elementos al inicio (izquierda) */
+    justify-content: flex-start;
+    /* Alinea los elementos al inicio (parte superior) */
+    position: fixed;
+    /* Fija la barra de navegación en la pantalla */
+    top: 0;
+    /* Posiciona la barra de navegación en la parte superior */
+    right: -300px;
+    /* Coloca la barra de navegación fuera de la vista a la derecha */
+    height: 100vh;
+    /* Altura de la barra de navegación al 100% de la altura de la ventana */
+    width: 300px;
+    /* Ancho de la barra de navegación de 300px */
+    background-color: #E3E6F3;
+    /* Color de fondo en un tono gris claro */
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+    /* Sombra sutil para dar profundidad */
+    padding: 80px 0 0 10px;
+    /* Espaciado interno: 80px arriba, 0 a los lados, 0 abajo, 10px a la izquierda */
+    transition: 0.3s;
+    /* Transición suave de 0.3 segundos para cambios de estado */
+  }
+
+  /* Estilo para la barra de navegación cuando está activa */
+  #navbar.active {
+    right: 0px;
+    /* Mueve la barra de navegación a la vista (0px desde la derecha) */
+  }
+
+  /* Estilo para los elementos de lista dentro de la barra de navegación */
+  #navbar li {
+    margin-bottom: 25px;
+    /* Margen inferior de 25px para separar los elementos de la lista */
+  }
+
+  /* Estilo para el contenedor móvil */
+  #mobile {
+    display: flex;
+    /* Utiliza un modelo de caja flexible para el diseño */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+  }
+
+  /* Estilo para los iconos dentro del contenedor móvil */
+  #mobile i {
+    color: #000;
+    /* Color del icono en negro */
+    font-size: 24px;
+    /* Tamaño de fuente del icono de 24px */
+    padding-left: 20px;
+    /* Espaciado a la izquierda del icono de 20px */
+  }
+
+  /* Estilo para el botón de cerrar */
+  #close {
+    display: initial;
+    /* Muestra el elemento con el valor inicial de display (puede ser block o inline) */
+    position: absolute;
+    /* Posiciona el elemento de forma absoluta respecto a su contenedor más cercano con posición relativa */
+    top: 30px;
+    /* Posiciona el elemento a 30px desde la parte superior */
+    left: 30px;
+    /* Posiciona el elemento a 30px desde la izquierda */
+    color: #222;
+    /* Color del texto en un tono gris oscuro */
+    font-size: 24px;
+    /* Tamaño de fuente de 24px */
+  }
+
+  /* Estilo para la bolsa de compras (lg-bag) */
+  #lg-bag {
+    display: none;
+    /* Oculta el elemento por defecto */
+  }
+
+  /* Estilo para la sección hero */
+  #hero {
+    height: 70vh;
+    /* Altura de la sección hero al 70% de la altura de la ventana */
+    padding: 0 80px;
+    /* Espaciado interno: 0 arriba y abajo, 80px a los lados */
+    background-position: top 30% right 30%;
+    /* Posiciona el fondo a 30% desde la parte superior y 30% desde la derecha */
+  }
+
+  /* Estilo para la sección de características */
+  #feature {
+    justify-content: center;
+    /* Centra los elementos hijos horizontalmente */
+  }
+
+  /* Estilo para las cajas de características */
+  #feature .fe-box {
+    margin: 15px 15px;
+    /* Margen de 15px en todos los lados */
+  }
+
+  /* Estilo para el contenedor de productos en la sección product1 */
+  #product1 .pro-container {
+    justify-content: center;
+    /* Centra los elementos hijos horizontalmente */
+  }
+
+  /* Estilo para los productos dentro de product1 */
+  #product1 .pro {
+    margin: 15px;
+    /* Margen de 15px en todos los lados */
+  }
+
+  /* Estilo para el banner principal */
+  #banner {
+    height: 20vh;
+    /* Altura del banner al 20% de la altura de la ventana */
+  }
+
+  /* Estilo para las cajas dentro del banner pequeño */
+  #sm-banner .banner-box {
+    min-width: 100%;
+    /* Ancho mínimo de 100% del contenedor padre */
+    height: 30vh;
+    /* Altura de la caja al 30% de la altura de la ventana */
+  }
+
+  /* Estilo para el banner3 */
+  #banner3 {
+    padding: 0 40px;
+    /* Espaciado interno: 0 arriba y abajo, 40px a los lados */
+  }
+
+  /* Estilo para las cajas dentro del banner3 */
+  #banner3 .banner-box {
+    width: 28%;
+    /* Ancho de cada caja dentro del banner3 al 28% del contenedor padre */
+  }
+
+  /* Estilo para el formulario dentro del boletín */
+  #newsletter .form {
+    width: 70%;
+    /* Ancho del formulario al 70% del contenedor padre */
+  }
+
+
+  /* Contact page */
+  #form-details {
+    padding: 40px;
+  }
+
+  #form-details form {
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+/* Inicio de la consulta de medios (media query) para pantallas con un ancho máximo de 477px */
+@media(max-width: 768px) {
+
+  /* Estilo para la sección con id section-p1 */
+  #section-p1 {
+    padding: 20px;
+    /* Espaciado interno de 20px en todos los lados */
+  }
+
+  /* Estilo para el encabezado */
+  #header {
+    padding: 10px 30px;
+    /* Espaciado interno: 10px arriba y abajo, 30px a los lados */
+  }
+
+  /* Estilo para el encabezado h1 */
+  #h1 {
+    font-size: 38px;
+    /* Tamaño de fuente de 38px */
+  }
+
+  /* Estilo para el encabezado h2 */
+  #h2 {
+    font-size: 32px;
+    /* Tamaño de fuente de 32px */
+  }
+
+  /* Estilo para la sección hero en pantallas pequeñas */
+  #hero {
+    padding: 0px 20px;
+    /* Espaciado interno: 0 arriba y abajo, 20px a los lados */
+    background-position: 55%;
+    /* Posiciona el fondo al 55% */
+  }
+
+  /* Estilo para la sección de características en pantallas pequeñas */
+  #feature {
+    justify-content: space-between;
+    /* Espacia los elementos hijos de manera uniforme */
+  }
+
+  /* Estilo para las cajas de características en pantallas pequeñas */
+  #feature .fe-box {
+    width: 155px;
+    /* Ancho de cada caja de características a 155px */
+    margin: 0 0 15px 0;
+    /* Margen: 0 arriba, 0 a los lados, 15px abajo */
+  }
+
+  /* Estilo para los productos dentro de product1 */
+  #product1 .pro {
+    width: 100%;
+    /* Ancho del producto al 100% del contenedor padre */
+  }
+
+  /* Estilo para el banner principal */
+  #banner {
+    height: 40vh;
+    /* Altura del banner al 40% de la altura de la ventana */
+  }
+
+  /* Estilo para las cajas dentro del banner pequeño (sm-banner) */
+  #sm-banner .banner-box {
+    height: 40vh;
+    /* Altura de cada caja dentro del banner pequeño al 40% de la altura de la ventana */
+  }
+
+  /* Estilo para la segunda caja dentro del banner pequeño */
+  #sm-banner .banner-box2 {
+    margin-top: 20px;
+    /* Margen superior de 20px para separar esta caja de la anterior */
+  }
+
+  /* Estilo para el banner3 */
+  #banner3 {
+    padding: 0 20px;
+    /* Espaciado interno: 0 arriba y abajo, 20px a los lados */
+  }
+
+  /* Estilo para las cajas dentro del banner3 */
+  #banner3 .banner-box {
+    width: 100%;
+    /* Ancho de cada caja dentro del banner3 al 100% del contenedor padre */
+  }
+
+  /* Estilo para el formulario dentro del boletín */
+  #newsletter .form {
+    padding: 40px 20px;
+    /* Espaciado interno: 40px arriba y abajo, 20px a los lados */
+  }
+
+  /* Estilo para el formulario dentro del boletín (repetido) */
+  #newsletter .form {
+    width: 100%;
+    /* Ancho del formulario al 100% del contenedor padre */
+  }
+
+  /* Estilo para la sección de derechos de autor en el pie de página */
+  #footer .copyright {
+    text-align: start;
+    /* Alinea el texto al inicio (izquierda) */
+  }
+
+
+  /* Single Product */
+
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 50px;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
+
+  /* blog page */
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex;
+  }
+
+  #blog .blog-img {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+
+  #blog .blog-details {
+    width: 100%;
+  }
+
+
+  /* Contact page */
+  #contact-details {
+    flex-direction: column;
+  }
+
+  #contact-details .details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #contact-details .map {
+    width: 100%;
+  }
+
+  #form-details {
+    margin: 10px;
+    padding: 30ox 10px;
+
+  }
+
+
+
+  #form-details form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+
+    /* cart page*/
+#cart-add{
+  flex-direction: column;
+}
+
+#cupon{
+  width: 100%;
+}
+
+#subtotal{
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+
+
+
+}
